@@ -76,7 +76,7 @@ function execPrepareCommand(): void {
     const pm = manange();
     // return { bin: "pnpm", args: ["add", "-D", ...packages] };
     //   await execa(bin, args, { cwd });
-    execa(pm, ["prepare"], { cwd: process.cwd() });
+    execa(pm, ["run", "prepare"], { cwd: process.cwd() });
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(picocolors.red(`执行prepare命令失败：${message}`));
