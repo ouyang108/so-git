@@ -1,4 +1,4 @@
-测试
+
 # so-git
 
 一键为项目配置 `commitlint` + `cz-git` 的 CLI 工具，自动安装依赖、生成配置文件并注入 `package.json` 脚本，让你的团队规范 Git 提交流程。

@@ -13,6 +13,7 @@ export const pkgpath = (filename: string) => {
   };
 };
 export const manange = () => {
+  console.log("manange");
   const { path: pkgPath, cwd } = pkgpath("package.json");
   try {
     const pkg = readJsonSync(pkgPath) as Record<string, unknown>;
